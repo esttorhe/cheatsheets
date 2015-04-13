@@ -4086,6 +4086,840 @@ cheatsheet do
      end
 
   end
+
+  category do
+    id 'Lexer Warnings'
+
+    entry do
+                command '-W#pragma-messages'
+                name <<-'END'
+                %0
+        END
+     end
+            
+          
+            
+              entry do
+                command '-W#warnings'
+                name <<-'END'
+                %0
+        END
+     end
+            
+          
+            
+              entry do
+                command '-W#warnings'
+                name <<-'END'
+                %0
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wambiguous-macro'
+                name <<-'END'
+                ambiguous expansion of macro %0
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wauto-import'
+                name <<-'END'
+                treating `%select{include|import|include_next|__include_macros}` as an import of module `%1`
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wbackslash-newline-escape'
+                name <<-'END'
+                backslash and newline separated by space
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++11-compat'
+                name <<-'END'
+                identifier after literal will be treated as a user-defined literal suffix in C++11
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++11-compat'
+                name <<-'END'
+                '%0' is a keyword in C++11
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-c++11-compat'
+                name <<-'END'
+                digit separators are incompatible with C++ standards before C++1y
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-c++11-compat-pedantic'
+                name <<-'END'
+                binary integer literals are incompatible with C++ standards before C++1y
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                raw string literals are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                unicode literals are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                universal character name referring to a control character is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                '::' is treated as digraph ':' (aka '[') followed by ':' in C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                using this character in an identifier is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                specifying character '%0' with a universal character name is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                variadic macros are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                ```
+                #line number greater than 32767 is incompatible with C++98
+                ```
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                C++98 requires newline at end of file
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                empty macro arguments are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc99-compat'
+                name <<-'END'
+                unicode literals are incompatible with C99
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc99-compat'
+                name <<-'END'
+                %select{using this character in an identifier|starting an identifier with this character}0 is incompatible with C99
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wcomment'
+                name <<-'END'
+                '/*' within block comment
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wcomment'
+                name <<-'END'
+                escaped newline between */ characters at block comment end
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wdisabled-macro-expansion'
+                name <<-'END'
+                disabled expansion of recursive macro
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wheader-guard'
+                name <<-'END'
+                %0 is used as a header guard here, followed by `#define` of a different macro
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wignored-attributes'
+                name <<-'END'
+                unknown attribute '%0'
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wincomplete-module'
+                name <<-'END'
+                header '%0' is included in module '%1' but not listed in module map
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wincomplete-umbrella'
+                name <<-'END'
+                umbrella header for module '%0' does not include header '%1'
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Winvalid-token-paste'
+                name <<-'END'
+                pasting formed '%0', an invalid preprocessing token, DefaultError
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wmalformed-warning-check'
+                name <<-'END'
+                __has_warning expected option name (e.g. \"-Wundef\")
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wnewline-eof'
+                name <<-'END'
+                no newline at end of file
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wnull-character'
+                name <<-'END'
+                null character ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wnull-character'
+                name <<-'END'
+                null character(s) preserved in string literal
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wnull-character'
+                name <<-'END'
+                null character(s) preserved in character literal
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wtrigraphs'
+                name <<-'END'
+                ignored trigraph would end block comment
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wtrigraphs'
+                name <<-'END'
+                trigraph ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wundef'
+                name <<-'END'
+                %0 is not defined, evaluates to 0
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunicode'
+                name <<-'END'
+                universal character names are only valid in C99 or C++ treating as '\\' followed by identifier
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunicode'
+                name <<-'END'
+                \\%0 used with no following hex digits treating as '\\' followed by identifier
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunicode'
+                name <<-'END'
+                incomplete universal character name treating as '\\' followed by identifier
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunicode'
+                name <<-'END'
+                universal character name refers to a surrogate character
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunknown-pragmas'
+                name <<-'END'
+                unknown pragma ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunknown-pragmas'
+                name <<-'END'
+                pragma STDC FENV_ACCESS ON is not supported, ignoring pragma
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wunused-macros'
+                name <<-'END'
+                macro is not used
+        END
+     end
+  end
+
+  category do
+    id 'Parser Warnings'
+
+    entry do
+                command '-Warc-bridge-casts-disallowed-in-nonarc'
+                name <<-'END'
+                '%0' casts have no effect when not using ARC
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wattributes'
+                name <<-'END'
+                unknown __declspec attribute %0 ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wavailability'
+                name <<-'END'
+                'unavailable' availability overrides all other availability information
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++11-compat'
+                name <<-'END'
+                use of right-shift operator ('') in template argument will require parentheses in C++11
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++11-compat'
+                name <<-'END'
+                'auto' storage class specifier is redundant and incompatible with C++11
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-c++11-compat'
+                name <<-'END'
+                'decltype(auto)' type specifier is incompatible with C++ standards before C++1y
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                range-based for loop is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                alias declarations are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                in-class initialization of non-static data members is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                defaulted function definitions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                rvalue references are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                reference qualifiers on functions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                inline namespaces are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                generalized initializer lists are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                trailing return types are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                enumeration types with a fixed underlying type are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                alignof expressions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                '%0' keyword is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                'decltype' type specifier is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                deleted function definitions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                consecutive right angle brackets are incompatible with C++98 (use '> >')
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                static_assert declarations are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                scoped enumerations are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                lambda expressions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                attributes are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                'alignas' is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                noexcept specifications are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                literal operators are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                noexcept expressions are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat'
+                name <<-'END'
+                'nullptr' is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                extra '' outside of a function is incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                extern templates are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wc++98-compat-pedantic'
+                name <<-'END'
+                commas at the end of enumerator lists are incompatible with C++98
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wdangling-else'
+                name <<-'END'
+                add explicit braces to avoid dangling else
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wdeprecated'
+                name <<-'END'
+                Use of 'long' with '__vector' is deprecated
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wdeprecated-declarations'
+                name <<-'END'
+                use of C-style parameters in Objective-C method declarations is deprecated
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wdeprecated-register'
+                name <<-'END'
+                'register' storage class specifier is deprecated
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wduplicate-decl-specifier'
+                name <<-'END'
+                duplicate '%0' declaration specifier
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wextra-semi'
+                name <<-'END'
+                extra ';' after member function definition
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wextra-tokens'
+                name <<-'END'
+                "extra tokens at the end of '#pragma omp %0' are ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wgcc-compat'
+                name <<-'END'
+                GCC does not allow %0 attribute in this position on a function definition
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wignored-attributes'
+                name <<-'END'
+                attribute %0 ignored, because it is not attached to a declaration
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wmicrosoft-exists'
+                name <<-'END'
+                dependent %select{__if_not_exists|__if_exists}0 declarations are ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wmissing-selector-name'
+                name <<-'END'
+                %0 used as the name of the previous parameter rather than as part of the selector
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wsemicolon-before-method-body'
+                name <<-'END'
+                semicolon before method body is ignored
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wsource-uses-openmp'
+                name <<-'END'
+                unexpected `#pragma omp ...` in program
+        END
+     end
+            
+          
+            
+              entry do
+                command '-Wstatic-inline-explicit-instantiation'
+                name <<-'END'
+                ignoring '%select{static|inline}0' keyword on explicit template instantiation
+        END
+     end
+  end
   
   notes <<-'END'
     * Based on [Mattt Thompson](https://twitter.com/mattt)'s compiled list located at [fuckclangwarnings](http://fuckingclangwarnings.com/). <br/>
